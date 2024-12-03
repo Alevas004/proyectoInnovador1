@@ -1,0 +1,71 @@
+
+
+.container__card {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--text-color);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container__post-title{
+    margin: 10px;
+    padding: 10px;
+    width: 90%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(221, 221, 221, 0.184)
+
+    
+}
+.post__title h3{
+    margin: 0 0 8px 0;
+}
+
+.container__title-owner {
+    display: flex;
+    flex-direction: column;
+}
+.post__owner-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.post__owner-info p{
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.container__info-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img__post img {
+    max-width: 800px;
+    width: 100%;
+    border-radius: 10px;
+}
+.img__post {
+    margin: 5px 20px;
+    
+}
+.description__post {
+    margin: 5px 20px;
+}
+.description__post p {
+    color: white;
+}
+.interaction {
+    background-color: white;
+    width: 90%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(221, 221, 221, 0.184)
+
+}

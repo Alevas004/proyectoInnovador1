@@ -1,0 +1,19 @@
+
+.contact__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.cards__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+.contact__card{
+    width: 150px;
+}

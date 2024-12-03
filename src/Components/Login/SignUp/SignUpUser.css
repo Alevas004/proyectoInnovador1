@@ -1,0 +1,99 @@
+
+.signup__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.toggle-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.toggle-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: grey; /* Estado inicial gris */
+  transition: background-color 0.3s ease;
+}
+
+.toggle-button.active {
+  background-color: var(--accent-color); /* Estado activo verde */
+}
+
+/* Animacion campos */
+.inputGroup {
+  position: relative;
+  margin: 15px 0;
+}
+.inputGroupInput, #city,#speciality, .xp {
+  font: inherit;
+  color: var(--accent-color);
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  outline: 2px solid var(--accent-color);
+  background-color: transparent;
+  transition: outline-color 500ms;
+}
+.inputGroupInput:is(:focus, :valid),#city:is(:focus), #speciality:is(:focus), .xp:is(:focus) {
+  outline-color: var(--secondary-color);
+}
+.inputGroupLabel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  translate: 10px 10px;
+  color: var(--accent-color);
+  transition: translate 500ms, scale 500ms;
+}
+.inputGroupInput:focus + 
+.inputGroupLabel,
+.inputGroupInput:valid +
+.inputGroupLabel,
+#city:focus + 
+.inputGroupLabel,
+#city:valid +
+.inputGroupLabel,
+#speciality:focus + 
+.inputGroupLabel,
+#speciality:valid +
+.inputGroupLabel,
+.xp + 
+.inputGroupLabel,
+.xp +
+.inputGroupLabel {
+  padding-inline: 5px;
+  translate: 2px -14px;
+  scale: 0.8;
+  background-color: #e9ecef;
+}
+#city:focus + 
+.inputGroupLabel,
+#city:valid +
+.inputGroupLabel,
+#speciality:focus + 
+.inputGroupLabel,
+#speciality:valid +
+.inputGroupLabel,
+.xp + 
+.inputGroupLabel,
+.xp +
+.inputGroupLabel {
+  translate: 10px -8px;
+}
+#city,#speciality, .xp {
+  padding: 10px;
+  margin: 5px 0;
+}
+.xp::placeholder {
+  font: inherit;
+  color: var(--accent-color);
+}
+
+/* Fin Animacion campos */

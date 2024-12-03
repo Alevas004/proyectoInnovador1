@@ -1,0 +1,44 @@
+.nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo_nav img {
+  height: 50px ;
+}
+.login_nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.navigation_items .ul_links {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+.navigation_items .ul_links a {
+  text-decoration: none;
+}
+.navbar__link {
+  color: black;
+}
+.navbar__link--active, .navbar__link:hover {
+  color: blue;
+  font-weight: 800;
+}
+
+.sign_interaction svg {
+  font-size: 20px;
+}
+.profile_btn svg {
+  font-size: 20px;
+  
+}
